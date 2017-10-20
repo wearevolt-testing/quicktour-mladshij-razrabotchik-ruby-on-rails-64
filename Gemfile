@@ -18,6 +18,7 @@ gem 'rails_12factor', group: :production
 
 group :development, :test do
   gem 'rspec-rails'
+  gem 'rails-controller-testing'
   gem 'ffaker'
   gem 'factory_girl_rails'
   gem 'annotate'
