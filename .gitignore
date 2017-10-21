@@ -18,6 +18,7 @@
 
 .byebug_history
 .rvmrc
+.ruby-version
 /.idea
 *.swp
 *.swo
