@@ -1,24 +1,25 @@
 default: &default
-  adapter: postgresql
-  encoding: unicode
-  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  adapter: postgresql   
+  encoding: unicode   
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>   
   host: localhost
 
 development:
-  <<: *default
-  database: volt_test_development
-  username: postgres
-  password: sps678
+  <<: *default   
+  database: volt_test_development   
+  username: postgres   
+  password: sps678   
   # port: 5432
-  
-test:
-  <<: *default
-  database: volt_test_test
-  username: postgres
+
+test:   
+  <<: *default   
+  database: volt_test_test   
+  username: postgres   
   password: sps678
 
-production:
-  <<: *default
-  database: volt_test_production
-  username: volt_test
+production:   
+  <<: *default   
+  database: volt_test_production   
+  username: volt_test   
   password: <%= ENV['VOLT_TEST_DATABASE_PASSWORD'] %>
+

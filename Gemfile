@@ -9,12 +9,9 @@ end
 gem 'rails', '~> 5.1.4'
 gem 'pg', '~> 0.18'
 gem 'puma', '~> 3.7'
-gem 'sass-rails', '~> 5.0'
-gem 'uglifier', '>= 1.3.0'
-gem 'coffee-rails', '~> 4.2'
-gem 'turbolinks', '~> 5'
 gem 'jsonapi-resources'
 gem 'rails_12factor', group: :production
+gem 'active_model_serializers'
 
 group :development, :test do
   gem 'rspec-rails'
@@ -22,12 +19,12 @@ group :development, :test do
   gem 'ffaker'
   gem 'factory_girl_rails'
   gem 'annotate'
+  gem 'listen'
 end
 
 group :development do
   gem 'binding_of_caller'
   gem 'pry-rails'
-  gem 'listen'
 end
 
 ruby "2.4.0"
